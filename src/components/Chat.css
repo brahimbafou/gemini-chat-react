@@ -1,0 +1,37 @@
+.chat-box {
+    height: calc(100% - 4rem);
+}
+.message {
+    max-width: 85%;
+}
+.message.my-message {
+    align-self: end;
+}
+.message-content {
+    padding: 10px;
+    border-radius: 12px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    word-wrap: break-word;
+}
+.my-message .message-content {
+    /*background-color: #d1e7dd;*/
+    background-color: var(--mono-25);
+    background-color: color-mix(in srgb, var(--white-0), transparent 25%);
+    align-self: flex-end;
+    color: #0f5132;
+}
+.other-message .message-content {
+    background-color: #e2e3e5;
+    background-color: var(--mono-50);
+    background-color: color-mix(in srgb, var(--white-0), transparent 75%);
+    background: none;
+    align-self: flex-start;
+    color: #495057;
+}
+#submit-button {
+    border-radius: .75rem;
+    /*width: 2.5rem !important;*/
+    /*padding: 0 !important;*/
+    width: 96px;
+}

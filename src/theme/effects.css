@@ -1,0 +1,29 @@
+:root {
+    /*--button-shadow: inset 1px 2px 1px var(--primary-400),*/
+    /*                 inset -2px -1px 1px var(--primary-600),*/
+    /*                 0px 2px 6px rgba(31, 96, 136, 0.2);*/
+    /*--seocndary-button-shadow: inset -2px -2px 1px var(--mono-50),*/
+    /*                           0px 2px 6px -2px #d4d4d4,*/
+    /*                           0px 0px 2px #eaedf0;*/
+    --button-shadow: inset 1px 2px 1px color-mix(in srgb, var(--primary-400), transparent 25%),
+    inset -2px -1px 1px color-mix(in srgb, var(--primary-600), transparent 25%),
+    0px 2px 6px color-mix(in srgb, rgba(31, 96, 136, 0.2), transparent 25%);
+
+    --danger-button-shadow: inset 1px 2px 1px color-mix(in srgb, var(--danger-500), transparent 25%),
+    inset -2px -1px 1px color-mix(in srgb, var(--danger-700), transparent 25%),
+    0px 2px 6px color-mix(in srgb, rgba(31, 96, 136, 0.2), transparent 25%);
+    --warning-button-shadow: inset 1px 2px 1px color-mix(in srgb, var(--warning-500), transparent 25%),
+    inset -2px -1px 1px color-mix(in srgb, var(--warning-700), transparent 50%),
+    0px 2px 6px color-mix(in srgb, rgba(31, 96, 136, 0.2), transparent 25%);
+
+    --outline-button-shadow: inset -2px -2px 1px var(--mono-25),
+    0px 2px 6px -2px #d4d4d4,
+    0px 0px 2px -1px #eaedf0;
+
+    --text-field-shadow: inset 2px 2px 1px color-mix(in srgb, var(--mono-50), transparent 25%),
+    inset -2px -2px 1px color-mix(in srgb, var(--white-0), transparent);
+    --profile-card-shadow: 0px 0pc 2px 0px rgba(233, 236, 240, 0.75),
+                           1px 1px 2px -1px #d4d4d4,
+                           inset -1px -1px 1px -1px var(--mono-100);
+    --context-menu-shadow: 1px 2px 8px -2px rgba(0,0,0,0.2);
+}

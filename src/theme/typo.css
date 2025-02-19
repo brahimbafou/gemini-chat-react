@@ -1,0 +1,103 @@
+* {
+    /*font-family: "lexend", sans-serif;*/
+    font-family: "Inter", serif;
+    --display-family: "Alkatra", system-ui;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-500)
+}
+
+a {text-decoration: none;}
+
+:root {
+
+    --typo-wt-th: 300;
+    --typo-wt-rg: 400;
+    --typo-wt-md: 500;
+    --typo-wt-sb: 600;
+    --typo-wt-bl: 700;
+
+    --typo-d-l: 4rem;
+    --typo-d-m: 3.5rem;
+    --typo-d-s: 3rem;
+
+    --typo-h1: 2.5rem;
+    --typo-h2: 2rem;
+    --typo-h3: 1.75rem;
+    --typo-h4: 1.5rem;
+
+    --typo-subt-l:1.5rem;
+    --typo-subt-m:1.25rem;
+    --typo-subt-s:18px;
+
+    --typo-b-l: 1.25rem;
+    --typo-b-m: 1rem;
+    --typo-b-s: 14px;
+    --typo-b-xs: 12px;
+
+    --typo-p-l: 1.25rem;
+    --typo-p-m: 1rem;
+    --typo-p-s: 14px;
+}
+
+.typo-wt-th {font-weight: 300;}
+.typo-wt-rg {font-weight: 400;}
+.typo-wt-md {font-weight: 500;}
+.typo-wt-sb {font-weight: 600;}
+.typo-wt-bl {font-weight: 700;}
+
+.typo-d-l {font-size: 4rem; /*line-height: 4rem;*/ font-family: var(--display-family) !important; font-weight:500}
+.typo-d-m {font-size: 3.5rem; /*line-height: 3.5rem;*/ font-family: var(--display-family) !important; font-weight:500}
+.typo-d-s {font-size: 3rem; /*line-height: 3rem;*/ font-family: var(--display-family) !important; font-weight:500}
+
+.typo-h1 {font-size: 2.5rem; line-height: 2.5rem}
+.typo-h2 {font-size: 2rem; line-height: 2rem}
+.typo-h3 {font-size: 1.75rem; line-height: 2rem}
+.typo-h4 {font-size: 1.5rem; line-height: 1.5rem}
+
+.typo-subt-l {font-size:1.5rem; line-height: 1.5rem}
+.typo-subt-m {font-size:1.25rem; line-height: 1.25rem}
+.typo-subt-s {font-size:18px; line-height: 18px}
+
+.typo-b-l {font-size: 1.25rem; line-height: 1.5rem}
+.typo-b-m {font-size: 1rem; line-height: 1.25rem}
+.typo-b-s {font-size: 14px; line-height: 1.25rem}
+.typo-b-xs {font-size: 12px; line-height: 1.25rem}
+
+.typo-p-l {font-size: 1.25rem; line-height: 1.75rem}
+.typo-p-m {font-size: 1rem; line-height: 1.5rem}
+.typo-p-s {font-size: 14px; line-height: 1.5rem}
+
+.typo-lh-1 {line-height: 100% !important;}
+
+.text-200 { color: var(--text-200) !important;}
+.text-300 { color: var(--text-300) !important;}
+.text-400 { color: var(--text-400) !important;}
+.text-500 { color: var(--text-500) !important;}
+.text-600 { color: var(--text-600) !important;}
+.text-500-r { color: var(--text-500-r) !important;}
+
+.text-primary { color: var(--primary-500) !important;}
+.text-primary-600 { color: var(--primary-700) !important;}
+.text-danger { color: var(--text-danger-500) !important;}
+.text-danger-600 { color: var(--text-danger-600) !important;}
+.text-info { color: var(--text-info-500) !important;}
+.text-info-600 { color: var(--text-info-500) !important;}
+
+
+
+.text-indent { text-indent: var(--spacing-m) !important;}
+.text-indent-s { text-indent: var(--spacing-s) !important;}
+.text-indent-l { text-indent: var(--spacing-l) !important;}
+.text-indent-xl { text-indent: var(--spacing-xl) !important;}
+
+
+.text-center { text-align: center}
+.text-capitalize { text-transform: capitalize}
+.text-underline { text-decoration: underline}
+.text-link:hover { text-decoration: underline}
+
+.require-star {
+    color: var(--primary-500);
+    font-weight: bold;
+}

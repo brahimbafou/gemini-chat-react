@@ -1,0 +1,119 @@
+    :root {
+    /* Spacing */
+    --spacing-0: 0;
+    --spacing-s: .25rem;
+    --spacing-m: .5rem;
+    --spacing-mp: .75rem;
+    --spacing-l: 1rem;
+    --spacing-xl: 2rem;
+
+    /* Border Radius */
+    --radius-0: 0;
+    --radius-s: .25rem;
+    --radius-m: .5rem;
+    --radius-mp: .75rem;
+    --radius-l: 1rem;
+    --radius-xl: 2rem;
+
+    /* Default Device and Grid Settings */
+    --device-width: 0px;
+    --device-breakpoint: 0;
+
+    /* Grid Widths */
+    --small-phone-grid-width: 344px;
+    --phone-breakpoint: 576px;
+    --phone-grid-width: 520px;
+    --large-phone-breakpoint: 704px;
+    --large-phone-grid-width: 664px;
+    --tablet-breakpoint: 928px;
+    --tablet-grid-width: 852px;
+    --laptop-breakpoint: 1088px;
+    --laptop-grid-width: 1040px;
+    --desktop-breakpoint: 1312px;
+    --desktop-grid-width: 1232px;
+
+    /* Default Grid Settings */
+    --grid-columns: repeat(12, 1fr);
+    --grid-gap: 16px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 576px) {
+    :root {
+        --device-width: var(--small-phone-grid-width);
+        --grid-columns: repeat(8, 36px);
+        --grid-gap: 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 704px) {
+    :root {
+        --device-width: var(--phone-grid-width);
+        --device-breakpoint: var(--phone-breakpoint);
+        --grid-columns: repeat(12, 36px);
+        --grid-gap: 8px;
+    }
+}
+
+@media (min-width: 704px) and (max-width: 928px) {
+    :root {
+        --device-width: var(--large-phone-grid-width);
+        --device-breakpoint: var(--large-phone-breakpoint);
+        --grid-columns: repeat(12, 48px);
+        --grid-gap: 8px;
+    }
+}
+
+@media (min-width: 928px) and (max-width: 1088px) {
+    :root {
+        --device-width: var(--tablet-grid-width);
+        --device-breakpoint: var(--tablet-breakpoint);
+        --grid-columns: repeat(12, 60px);
+        --grid-gap: 12px;
+    }
+}
+
+@media (min-width: 1088px) and (max-width: 1312px) {
+    :root {
+        --device-width: var(--laptop-grid-width);
+        --device-breakpoint: var(--laptop-breakpoint);
+        --grid-columns: repeat(12, 72px);
+        --grid-gap: 16px;
+    }
+}
+
+@media (min-width: 1312px) {
+    :root {
+        --device-width: var(--desktop-grid-width);
+        --device-breakpoint: var(--desktop-breakpoint);
+        --grid-columns: repeat(12, 88px);
+        --grid-gap: 16px;
+    }
+}
+
+.grid-wrapper {
+    width: var(--device-width);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns);
+    gap: var(--grid-gap);
+}
+
+.grid-item-preview {
+    background: rgba(0, 150, 136, 0.6);
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.col-span-1 { grid-column: span 1; }
+.col-span-2 { grid-column: span 2; }
+.col-span-3 { grid-column: span 3; }
+.col-span-4 { grid-column: span 4; }
+.col-span-6 { grid-column: span 6; }
+.col-span-8 { grid-column: span 8; }
+.col-span-full {grid-column: 1 / -1; }
+
